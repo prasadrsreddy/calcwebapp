@@ -7,6 +7,6 @@ node{
         sh "${mvnHome}/bin/mvn package"
     }
     stage('Deployment'){ 
-        sh 'sudo -s cp target/*.war /opt/tomcat/webapps'
+        sh 'cp target/*.war /opt/tomcat/webapps'
     }    
 }
